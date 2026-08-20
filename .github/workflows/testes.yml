@@ -1,0 +1,78 @@
+name: Primeira Pipeline
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  teste_soma:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar pytest
+        run: pip install pytest
+
+      - name: Executar teste de soma
+        run: pytest test_soma.py
+
+  teste_subtracao:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar pytest
+        run: pip install pytest
+
+      - name: Executar teste de subtração
+        run: pytest test_subtracao.py
+
+  teste_multiplicacao:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar pytest
+        run: pip install pytest
+
+      - name: Executar teste de multiplicação
+        run: pytest test_multiplicacao.py
+
+  teste_divisao:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar pytest
+        run: pip install pytest
+
+      - name: Executar teste de divisão
+        run: pytest test_divisao.py
