@@ -13,20 +13,6 @@ A aplicação consiste em uma calculadora simples que realiza quatro operações
 
 Além da aplicação, foram criados testes automatizados para verificar se cada operação está funcionando corretamente.
 
-## 🗂️ Estrutura do projeto
-
-Pipeline_Calculadora/
-│
-├── calculadora.py
-├── test_soma.py
-├── test_subtracao.py
-├── test_multiplicacao.py
-├── test_divisao.py
-│
-└── .github/
-    └── workflows/
-        └── pipeline.yml
-
 ## 🧪 Testes automatizados
 
 Os testes foram desenvolvidos utilizando o pytest.
